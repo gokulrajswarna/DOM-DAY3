@@ -1,0 +1,40 @@
+
+.table-responsive {
+    max-width: 700px;
+    margin: 0 auto;
+    
+  }
+  
+  table, th, td {
+    justify-content: center;
+    border: 1px solid black;
+      border-collapse: collapse;
+      padding: 7px;
+    margin-left: auto; 
+    margin-right: auto;
+    
+  }
+  
+  .pagination-container {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+  }
+  
+  h1,p{
+    text-align: center;
+  }
+  
+  *{
+    background-color:rgb(247, 243, 239);
+  }
+  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <style>
+*{
+  margin:0;
+  background-color: aquamarine;
+}
+table{
+  margin-left:40%;
+}
+div,h1{
+  margin-left:50%;
+  padding: 0%;
+  font-weight: bolder;
+}
+p{
+  margin-left:600px;
+  padding: 0%;
+  font-weight: bolder;
+  font-size:larger;
+}
+
+td{
+  border:1px solid;
+ 
+}
+#thead{
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <h1 id="title">Form</h1><br/>
+  <p id="description">Dom manipulatin with form</p><br/>
+  <table >
+    <form id="form">
+      <tr>
+        <th>FirstName</th>
+       <td><input type="text" name="fname" id="first-name" placeholder="firstname"  onchange=" handleInput(this)"></td>
+      </tr>
+      <tr>
+        <th>LastName</th>
+        <td><input type="text" name="lname" id="last-name" placeholder="lastname"  onchange=" handleInput(this)"> </td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td><input id ="address" name='address' for="address" onchange=" handleInput(this)"></td>
+      </tr>
+      <tr>
+        <th>Pincode</th>
+        <td><input type="text" name="pincode" id ="pincode" placeholder="000000"  onchange=" handleInput(this)"></td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td><input type="radio" name="gender" id ="gender" onchange=" handleInput(this)">Male
+             <input type="radio" name="gender" id ="gender" onchange=" handleInput(this)">female</td>
+      </tr>
+      <!-- <tr>
+        <th>Choice of food</th>
+        <td id="select" onchange="handle()"><select onchange="handle()"><option>select</option><option>pizza</option>
+          <option>burger</option>
+          <option>naan</option>
+          <option>butter</option>
+          <option>cheese</option></select></td>
+      </tr> -->
+      <tr>
+        <th>State</th>
+       <td><input type="text" name="state" id="state" placeholder="Tamilnadu"  onchange=" handleInput(this)"></td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td><input type="text" id= "country" placeholder="India" onchange=" handleInput(this)"></td>
+      </tr>
+      
+    </form>
+  </table>
+ <div>
+  <input type="button" name="button" id="sunmit" value="submit" onclick="handleSubmit()" >
+ </div><hr>
+   
+ 
+  <script src="Form.js"></script>
+  <script src = "http://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
